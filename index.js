@@ -1,34 +1,77 @@
 console.log("Hello World!");
 
-const USERS_URL = "https://jsonplaceholder.typicode.com/users";
-const POSTS_URL = "https://jsonplaceholder.typicode.com/posts";
-const TODOS_URL = "https://jsonplaceholder.typicode.com/todos";
+// 1. let
+let age = 20;
+age = 21;
 
-async function main() {
-  try {
-    const [userResponse, postsResponse, todosResponse] = await Promise.all([
-      fetch(USERS_URL),
-      fetch(POSTS_URL),
-      fetch(TODOS_URL),
-    ]);
+console.log(age);
 
-    if (!userResponse.ok || !postsResponse.ok || !todosResponse.ok) {
-      throw new Error("Failed to fetch data from the API.");
-    }
+// 2. const
+const name = "Haris";
 
-    const [users, posts, todos] = await Promise.all([
-      userResponse.json(),
-      postsResponse.json(),
-      todosResponse.json(),
-    ]);
+console.log(name);
 
-    console.log("USERS:", users.length);
-    console.log("POSTS:", posts.length);
-    console.log("TODOS:", todos.length);
-  } catch (error) {
-    console.error("Failed to fetch data. Please try again.");
-    process.exit(1);
-  }
+// 3. Function scope / accessing outer variable
+function sayHello() {
+  console.log(name);
 }
 
-main();
+sayHello();
+
+// 4. Function scope
+function test() {
+  const message = "Hello";
+  console.log(message);
+}
+
+test();
+
+// 5. Block scope
+if (true) {
+  let blockAge = 20;
+  const blockName = "Haris";
+
+  console.log(blockAge);
+  console.log(blockName);
+}
+
+// 6. Value type
+let a = 10;
+let b = a;
+
+b = 20;
+
+console.log(a); // 10
+console.log(b); // 20
+
+// 7. Reference type
+const user1 = {
+  name: "Haris",
+};
+
+const user2 = user1;
+
+user2.name = "Ali";
+
+console.log(user1.name); // Ali
+console.log(user2.name); // Ali
+
+// 8. Strict equality
+console.log(5 === 5); // true
+console.log(5 === "5"); // false
+
+// 9. Falsy value
+const emptyName = "";
+
+if (emptyName) {
+  console.log("Name exists");
+} else {
+  console.log("Name is empty");
+}
+
+// 10. Truthy value
+const userName = "Haris";
+
+if (userName) {
+  console.log("Name exists");
+}
