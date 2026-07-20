@@ -1,0 +1,13 @@
+{
+  "name": "user-insights-cli",
+  "version": "1.0.0",
+  "description": "A Node.js CLI application that generates user insights from JSONPlaceholder API",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
