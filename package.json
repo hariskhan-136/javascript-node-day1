@@ -1,13 +1,16 @@
 {
-  "name": "day1",
+  "name": "javascript-node-day1",
   "version": "1.0.0",
-  "description": "This repository contains my Day 1 practice for learning Node.js and JavaScript fundamentals.",
+  "description": "Day 1 - Node.js environment setup and JavaScript basics",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Muhammad Haris",
+  "license": "ISC"
 }
