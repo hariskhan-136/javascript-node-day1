@@ -25,3 +25,20 @@ javascript-node-day1/
 ├── package.json
 ├── package-lock.json
 └── index.js
+```
+
+## How to Run
+
+Install dependencies:
+
+npm install
+
+Run the project:
+
+npm start
+
+## Author
+
+Muhammad Haris
+
+GitHub: hariskhan-136
