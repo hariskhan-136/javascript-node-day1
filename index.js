@@ -54,7 +54,6 @@ const user2 = user1;
 user2.name = "Ali";
 
 console.log(user1.name); // Ali
-console.log(user2.name); // Ali
 
 // 8. Strict equality
 console.log(5 === 5); // true
