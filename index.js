@@ -59,6 +59,7 @@ console.log(user2.name); // Ali
 // 8. Strict equality
 console.log(5 === 5); // true
 console.log(5 === "5"); // false
+console.log(5 == "5"); // true
 
 // 9. Falsy value
 const emptyName = "";
